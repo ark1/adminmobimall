@@ -134,10 +134,10 @@ ReactDOM.render(
         <Route path="/" component={Base}>
 
             {/* Default route*/}
-            <IndexRoute component={DashboardV1} />
+            <IndexRoute component={DashboardV2} />
 
             {/*Dashboard*/}
-            <Route path="dashboard" component={DashboardV1}/>
+            <Route path="dashboard" component={DashboardV1}/> 
             <Route path="dashboardv2" component={DashboardV2}/>
             <Route path="dashboardv3" component={DashboardV3}/>
 

@@ -12,7 +12,7 @@ class Sidebar extends React.Component {
         this.state = {
             userBlockCollapse: false,
             collapse: {
-                dashboard: this.routeActive(['dashboard', 'dashboardv2', 'dashboardv3']),
+                dashboard: this.routeActive(['dashboardv2', 'dashboardv3']),
                 widget: this.routeActive('widgets'),
                 elements: this.routeActive(['buttons', 'notifications', 'sweetalert', 'tour', 'carousel', 'spinners', 'animations', 'dropdown', 'nestable', 'sortable', 'panels', 'portlet', 'grid', 'grid-masonry', 'typography', 'icons-font', 'icons-weather', 'colors']),
                 forms: this.routeActive(['form-standard', 'form-extended', 'form-validation', 'form-wizard', 'form-upload', 'form-xeditable', 'form-cropper']),
@@ -86,8 +86,8 @@ class Sidebar extends React.Component {
                                         </div>
                                         { /* Name and Job */ }
                                         <div className="user-block-info">
-                                            <span className="user-block-name">Hello, Mike</span>
-                                            <span className="user-block-role">Designer</span>
+                                            <span className="user-block-name">Hello, David</span>
+                                            <span className="user-block-role">Administrator</span>
                                         </div>
                                     </div>
                                 </Collapse>
@@ -97,33 +97,17 @@ class Sidebar extends React.Component {
                             <li className="nav-heading ">
                                 <span data-localize="sidebar.heading.HEADER">Main Navigation</span>
                             </li>
-                            <li className={ this.routeActive(['dashboard', 'dashboardv2', 'dashboardv3']) ? 'active' : '' }>
-                                <div className="nav-item" onClick={ this.toggleItemCollapse.bind(this, 'dashboard') }>
-                                    <div className="pull-right label label-info">3</div>
-                                    <em className="icon-speedometer"></em>
-                                    <span data-localize="sidebar.nav.DASHBOARD">Dashboard</span>
-                                </div>
-                                <Collapse in={ this.state.collapse.dashboard } timeout={ 100 }>
-                                    <ul id="dashboard" className="nav sidebar-subnav">
-                                        <li className="sidebar-subnav-header">Mobimall DAsh</li>
-                                        <li className={ this.routeActive('dashboard') ? 'active' : '' }>
-                                            <Link to="dashboard" title="Dashboard v13">
-                                            <span>Mobimall Dash v1</span>
-                                            </Link>
-                                        </li>
-                                        <li className={ this.routeActive('dashboardv2') ? 'active' : '' }>
-                                            <Link to="dashboardv2" title="Dash v2">
-                                            <span>board v2</span>
-                                            </Link>
-                                        </li>
-                                        <li className={ this.routeActive('dashboardv3') ? 'active' : '' }>
-                                            <Link to="dashboardv3" title="Dashboard v3">
-                                            <span>Dash v3</span>
-                                            </Link>
-                                        </li>
-                                    </ul>
-                                </Collapse>
+                            <li className={ this.routeActive(['dashboardv2']) ? 'active' : '' }>
+                                
+                                <Link to="dashboardv2" title="Dashboard">
+                                <div className="pull-right label label-info">6</div>
+                                <em className="icon-speedometer"></em>
+                                <span data-localize="sidebar.nav.DASHBOARD">Dashboard</span>
+                                </Link>
                             </li>
+                                   
+                              
+                            
                             <li className="nav-heading ">
                                 <span data-localize="sidebar.heading.COMPONENTS">Manage</span>
                             </li>

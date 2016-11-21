@@ -912,7 +912,8 @@ _:-ms-lang(x), .layout-fixed .wrapper > .aside > .aside-inner {
   .topnavbar .navbar-nav > .open > a,
   .topnavbar .navbar-nav > .open > a:hover,
   .topnavbar .navbar-nav > .open > a:focus {
-    background-color: transparent; }
+    background-color: transparent;
+    color: #583748; }
   .topnavbar .navbar-nav > li > [data-toggle='navbar-search'] {
     position: absolute;
     top: 0;
@@ -940,7 +941,7 @@ _:-ms-lang(x), .layout-fixed .wrapper > .aside > .aside-inner {
     left: 0;
     z-index: 3001; }
     .sidebar-toggle > em {
-      color: white; } }
+      color: #583748; } }
 
 .nav-wrapper {
   padding: 0 15px;

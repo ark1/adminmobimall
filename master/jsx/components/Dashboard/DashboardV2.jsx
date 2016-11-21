@@ -24,6 +24,89 @@ class DashboardV2 extends React.Component {
         return (
             <ContentWrapper>
                
+                <Row className="mb-lg">
+                { /* START loader widget*/ }
+                 <Col sm={ 3 } xs={ 12 } className="text-center">
+                        
+                        <div className="panel panel-default">
+                            <div className="panel-body">
+                               <a href="#" className="text-muted pull-right">
+                                    <em className="fa fa-arrow-right"></em>
+                                </a>
+                                <div className="text-info">Today</div>
+                                <canvas data-classyloader="" data-percentage="61" data-speed="20" data-font-size="40px" data-diameter="60" data-line-color="#a551ce" data-remaining-line-color="rgba(200,200,200,0.4)"
+                                data-line-width="10" data-rounded-line="true" className="center-block"></canvas>
+                                <div data-sparkline="" data-bar-color="#a551ce" data-height="30" data-bar-width="8" data-bar-spacing="2" data-values="5,4,8,7,9,4,6,3,4,7,5,4,7" className="text-center"></div>
+                            </div>
+                            <div className="panel-footer">
+                                <p className="text-muted">
+                                    <span className="text-dark"><large>$2934</large></span>
+                                </p>
+                            </div>
+                        </div>                       
+                    </Col>
+                     <Col sm={ 3 } xs={ 12 } className="text-center">
+                        
+                        <div className="panel panel-default">
+                            <div className="panel-body">
+                                <a href="#" className="text-muted pull-right">
+                                    <em className="fa fa-arrow-right"></em>
+                                </a>
+                                <div className="text-info">Yesterday</div>
+                                <canvas data-classyloader="" data-percentage="43" data-speed="20" data-font-size="40px" data-diameter="60" data-line-color="#23b7e5" data-remaining-line-color="rgba(200,200,200,0.4)"
+                                data-line-width="10" data-rounded-line="true" className="center-block"></canvas>
+                                <div data-sparkline="" data-bar-color="#23b7e5" data-height="30" data-bar-width="5" data-bar-spacing="2" data-values="5,4,8,7,8,5,4,6,5,5,9,4,6,3,4,7,5,4,7" className="text-center"></div>
+                            </div>
+                            <div className="panel-footer">
+                                <p className="text-muted">
+                                
+                                   <span className="text-dark"><large>$3934</large></span>
+                                </p>
+                            </div>
+                        </div>                       
+                    </Col>
+                     <Col sm={ 3 } xs={ 12 } className="text-center">
+                        
+                        <div className="panel panel-default">
+                            <div className="panel-body">
+                                <a href="#" className="text-muted pull-right">
+                                    <em className="fa fa-arrow-right"></em>
+                                </a>
+                                <div className="text-info">7 Day</div>
+                                <canvas data-classyloader="" data-percentage="38" data-speed="20" data-font-size="40px" data-diameter="70" data-line-color="#ff902b" data-remaining-line-color="rgba(200,200,200,0.4)"
+                                data-line-width="10" data-rounded-line="true" className="center-block"></canvas>
+                                <div data-sparkline="" data-bar-color="#ff902b" data-height="30" data-bar-width="8" data-bar-spacing="2" data-values="5,4,8,7,8,5,4" className="text-center"></div>
+                            </div>
+                            <div className="panel-footer">
+                                <p className="text-muted">
+                                   
+                                    <span className="text-dark"><large>$20875</large></span>
+                                </p>
+                            </div>
+                        </div>                       
+                    </Col>
+                     <Col sm={ 3 } xs={ 12 } className="text-center">
+                        
+                        <div className="panel panel-default">
+                            <div className="panel-body">
+                                <a href="#" className="text-muted pull-right">
+                                    <em className="fa fa-arrow-right"></em>
+                                </a>
+                                <div className="text-info">30 Days</div>
+                                <canvas data-classyloader="" data-percentage="29" data-speed="20" data-font-size="40px" data-diameter="60" data-line-color="#7266ba" data-remaining-line-color="rgba(200,200,200,0.4)"
+                                data-line-width="10" data-rounded-line="true" className="center-block"></canvas>
+                                <div data-sparkline="" data-bar-color="#a551ce" data-height="30" data-bar-width="5" data-bar-spacing="2" data-values="5,4,8,7,4,5,4,9,5,3,9,4,6,8" className="text-center"></div>
+                            </div>
+                            <div className="panel-footer">
+                                <p className="text-muted">
+                                    
+                                    <span className="text-dark"><large>$102934</large></span>
+                                </p>
+                            </div>
+                        </div>                       
+                    </Col>
+                    { /* END loader widget*/ }
+                    </Row>
                 <Row>
                     <Col lg={ 4 }>
                         { /* START List group */ }
@@ -33,11 +116,11 @@ class DashboardV2 extends React.Component {
                                     <Col xs={ 6 }>
                                         <p className="m0 lead">1204</p>
                                         <p className="m0">
-                                            <small>Commits this month</small>
+                                            <large>Orders</large>
                                         </p>
                                     </Col>
                                     <Col xs={ 6 } className="text-center">
-                                        <div data-sparkline="" data-bar-color="#23b7e5" data-height="60" data-bar-width="10" data-bar-spacing="6" data-chart-range-min="0" data-values="3,6,7,8,4,5"></div>
+                                        <div data-sparkline="" data-bar-color="#a551ce" data-height="60" data-bar-width="10" data-bar-spacing="6" data-chart-range-min="0" data-values="3,6,7,8,4,5"></div>
                                     </Col>
                                 </Row>
                             </li>
@@ -46,7 +129,7 @@ class DashboardV2 extends React.Component {
                                     <Col xs={ 6 }>
                                         <p className="m0 lead">$ 3,200.00</p>
                                         <p className="m0">
-                                            <small>Available budget</small>
+                                             <large>3 Month Average</large>
                                         </p>
                                     </Col>
                                     <Col xs={ 6 } className="text-center">
@@ -59,9 +142,9 @@ class DashboardV2 extends React.Component {
                             <li className="list-group-item">
                                 <Row className="row-table pv-lg">
                                     <Col xs={ 6 }>
-                                        <p className="m0 lead">67</p>
+                                        <p className="m0 lead">367</p>
                                         <p className="m0">
-                                            <small>New followers</small>
+                                             <large>New Customers</large>
                                         </p>
                                     </Col>
                                     <Col xs={ 6 }>
@@ -114,94 +197,7 @@ class DashboardV2 extends React.Component {
                  
                     { /* END chart */ } 
                 </div>
-                <Row className="mb-lg">
-                { /* START loader widget*/ }
-                 <Col sm={ 3 } xs={ 6 } className="text-center">
-                        
-                        <div className="panel panel-default">
-                            <div className="panel-body">
-                               <a href="#" className="text-muted pull-right">
-                                    <em className="fa fa-arrow-right"></em>
-                                </a>
-                                <div className="text-info">Average Monthly Uploads</div>
-                                <canvas data-classyloader="" data-percentage="70" data-speed="20" data-font-size="40px" data-diameter="70" data-line-color="#23b7e5" data-remaining-line-color="rgba(200,200,200,0.4)"
-                                data-line-width="10" data-rounded-line="true" className="center-block"></canvas>
-                                <div data-sparkline="" data-bar-color="#23b7e5" data-height="30" data-bar-width="5" data-bar-spacing="2" data-values="5,4,8,7,8,5,4,6,5,5,9,4,6,3,4,7,5,4,7" className="text-center"></div>
-                            </div>
-                            <div className="panel-footer">
-                                <p className="text-muted">
-                                    <em className="fa fa-upload fa-fw"></em>
-                                    <span>This Month</span>
-                                    <span className="text-dark">1000 Gb</span>
-                                </p>
-                            </div>
-                        </div>                       
-                    </Col>
-                     <Col sm={ 3 } xs={ 6 } className="text-center">
-                        
-                        <div className="panel panel-default">
-                            <div className="panel-body">
-                                <a href="#" className="text-muted pull-right">
-                                    <em className="fa fa-arrow-right"></em>
-                                </a>
-                                <div className="text-info">Average Monthly Uploads</div>
-                                <canvas data-classyloader="" data-percentage="70" data-speed="20" data-font-size="40px" data-diameter="70" data-line-color="#23b7e5" data-remaining-line-color="rgba(200,200,200,0.4)"
-                                data-line-width="10" data-rounded-line="true" className="center-block"></canvas>
-                                <div data-sparkline="" data-bar-color="#23b7e5" data-height="30" data-bar-width="5" data-bar-spacing="2" data-values="5,4,8,7,8,5,4,6,5,5,9,4,6,3,4,7,5,4,7" className="text-center"></div>
-                            </div>
-                            <div className="panel-footer">
-                                <p className="text-muted">
-                                    <em className="fa fa-upload fa-fw"></em>
-                                    <span>This Month</span>
-                                    <span className="text-dark">1000 Gb</span>
-                                </p>
-                            </div>
-                        </div>                       
-                    </Col>
-                     <Col sm={ 3 } xs={ 6 } className="text-center">
-                        
-                        <div className="panel panel-default">
-                            <div className="panel-body">
-                                <a href="#" className="text-muted pull-right">
-                                    <em className="fa fa-arrow-right"></em>
-                                </a>
-                                <div className="text-info">Average Monthly Uploads</div>
-                                <canvas data-classyloader="" data-percentage="70" data-speed="20" data-font-size="40px" data-diameter="70" data-line-color="#23b7e5" data-remaining-line-color="rgba(200,200,200,0.4)"
-                                data-line-width="10" data-rounded-line="true" className="center-block"></canvas>
-                                <div data-sparkline="" data-bar-color="#23b7e5" data-height="30" data-bar-width="5" data-bar-spacing="2" data-values="5,4,8,7,8,5,4,6,5,5,9,4,6,3,4,7,5,4,7" className="text-center"></div>
-                            </div>
-                            <div className="panel-footer">
-                                <p className="text-muted">
-                                    <em className="fa fa-upload fa-fw"></em>
-                                    <span>This Month</span>
-                                    <span className="text-dark">1000 Gb</span>
-                                </p>
-                            </div>
-                        </div>                       
-                    </Col>
-                     <Col sm={ 3 } xs={ 6 } className="text-center">
-                        
-                        <div className="panel panel-default">
-                            <div className="panel-body">
-                                <a href="#" className="text-muted pull-right">
-                                    <em className="fa fa-arrow-right"></em>
-                                </a>
-                                <div className="text-info">Average Monthly Uploads</div>
-                                <canvas data-classyloader="" data-percentage="70" data-speed="20" data-font-size="40px" data-diameter="70" data-line-color="#23b7e5" data-remaining-line-color="rgba(200,200,200,0.4)"
-                                data-line-width="10" data-rounded-line="true" className="center-block"></canvas>
-                                <div data-sparkline="" data-bar-color="#23b7e5" data-height="30" data-bar-width="5" data-bar-spacing="2" data-values="5,4,8,7,8,5,4,6,5,5,9,4,6,3,4,7,5,4,7" className="text-center"></div>
-                            </div>
-                            <div className="panel-footer">
-                                <p className="text-muted">
-                                    <em className="fa fa-upload fa-fw"></em>
-                                    <span>This Month</span>
-                                    <span className="text-dark">1000 Gb</span>
-                                </p>
-                            </div>
-                        </div>                       
-                    </Col>
-                    { /* END loader widget*/ }
-                    </Row>
+                
                 { /* START radial charts */ }
                 <Row className="mb-lg">
                     <Col sm={ 3 } xs={ 6 } className="text-center">

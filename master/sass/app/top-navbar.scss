@@ -111,6 +111,7 @@ $nav-top-item-desktop-active:   $nav-top-item-mobile-active;
   .navbar-nav > .open   > a {
     &, &:hover, &:focus {
       background-color: transparent;
+      color: #583748;
     }
   }
 
@@ -147,7 +148,7 @@ $nav-top-item-desktop-active:   $nav-top-item-mobile-active;
     z-index: 3001;
     // Add color only for the icon
     > em {
-      color: white;
+      color: #583748;
     }
   }
 }
