@@ -14,33 +14,33 @@ $content-bg:                    #f5f7fa;
 $aside-bg:                      #fff;
 // NAVBAR TOP
 
-$nav-top-bg:                    $brand-info;
-$nav-top-bg-start:              $nav-top-bg;
-$nav-top-bg-end:                $brand-info-light;
+$nav-top-bg:                    $brand-mobimall;
+$nav-top-bg-start:              $brand-mobimall;
+$nav-top-bg-end:                $brand-mobimall;
 $nav-header-bg:                 transparent;
 
-$nav-top-item-mobile:           $nav-top-bg;
-$nav-top-item-mobile-active:    darken($nav-top-item-mobile, 20%);
+$nav-top-item-mobile:           #d8b0ea;
+$nav-top-item-mobile-active:    #ad14f2;
 
-$nav-top-item-desktop:          #fff;
-$nav-top-item-desktop-active:   darken($nav-top-item-desktop, 20%);
+$nav-top-item-desktop:          #d8b0ea;
+$nav-top-item-desktop-active:   #ad14f2;
 
 // SIDEBAR
 
 $sidebar-bg:                      $aside-bg;
 
 $sidebar-item-color:              #515253;
-$sidebar-item-color-active:       $nav-top-bg;
+$sidebar-item-color-active:       #d9a4f1;
 $sidebar-item-bg-active:          darken($sidebar-bg, 1%);
 
 $sidebar-icon-color:              inherits;
-$sidebar-icon-color-active:       $nav-top-bg;
+$sidebar-icon-color-active:      #d9a4f1;
 
 $sidebar-bullet-color:            rgba(0,0,0,.25);
 $sidebar-bullet-color-active:     $sidebar-icon-color-active;
 
 $sidebar-heading-color:           #919DA8;
-$sidebar-label-color:             $sidebar-item-color;
+$sidebar-label-color:             #ad14f2;
 
 // OFFSIDEBAR
 
@@ -99,7 +99,7 @@ body,
   // the button to toggle search
   .navbar-nav > li > [data-toggle='navbar-search'] {
     color: $nav-top-item-desktop;
-  }
+  } 
 
   .nav-wrapper {
     background-color: $nav-top-bg;
@@ -145,7 +145,7 @@ body,
   background-color: $sidebar-bg;
 
   .nav-heading {
-    color: $sidebar-heading-color;
+    color: #ad14f2;;
   }
 
   // Items
@@ -182,7 +182,9 @@ body,
     }
   }
 }
-
+   .sidebar > .nav > li.open .nav {
+        background-color: #fcfcfc;
+        color: #ad14f2; } 
 .sidebar-subnav {
   background-color: $sidebar-bg;
   > .sidebar-subnav-header {

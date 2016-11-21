@@ -14,9 +14,9 @@ class DashboardV1 extends React.Component {
     render() {
         return (
             <ContentWrapper>
-                <div className="content-heading">
-                    { /* START Language list */ }
-                    <div className="pull-right">
+                { /* <div className="content-heading">
+                    START Language list 
+                   /* <div className="pull-right">
                         <Dropdown id="dropdown-tr" pullRight>
                             <Dropdown.Toggle>
                                 English
@@ -26,8 +26,8 @@ class DashboardV1 extends React.Component {
                                 <MenuItem eventKey="2" data-set-lang="es">Spanish</MenuItem>
                             </Dropdown.Menu>
                         </Dropdown>
-                    </div>
-                    { /* END Language list */ } Dashboard
+                    </div>*/ }
+                    { /* END Language list  Dashboard
                     <small data-localize="dashboard.WELCOME">Welcome to Angle!</small>
                 </div>
                 { /* START widgets box */ }
@@ -40,7 +40,7 @@ class DashboardV1 extends React.Component {
                                     <em className="icon-cloud-upload fa-3x"></em>
                                 </Col>
                                 <Col xs={ 8 } className="pv-lg">
-                                    <div className="h2 mt0">1700</div>
+                                    <div className="h2 mt0">3500</div>
                                     <div className="text-uppercase">Uploads</div>
                                 </Col>
                             </Row>
@@ -122,47 +122,73 @@ class DashboardV1 extends React.Component {
                         { /* END chart */ }
                         <Row>
                             <Col lg={ 12 }>
-                                <div className="panel widget">
-                                    <Row className="row-table">
-                                        <Col md={ 2 } sm={ 3 } xs={ 6 } className="text-center bg-info pv-xl">
-                                            <em className="wi wi-day-sunny fa-4x"></em>
-                                        </Col>
-                                        <Col md={ 2 } sm={ 3 } xs={ 6 } className="pv br">
-                                            <div className="h1 m0 text-bold">32&deg;</div>
-                                            <div className="text-uppercase">Clear</div>
+                                
+                                        <Col md={ 2 } sm={ 3 } xs={ 6 } className="text-center bg-info">
+                                          <div className="panel widget bg-purple">
+                            <Row className="row-table">
+                                <Col xs={ 4 } className="text-center bg-purple-dark pv-lg">
+                                    <em className="icon-globe fa-3x"></em>
+                                </Col>
+                                <Col xs={ 8 } className="pv-lg">
+                                    <div className="h2 mt0">700
+                                        <small>GB</small>
+                                    </div>
+                                    <div className="text-uppercase">Quota</div>
+                                </Col>
+                            </Row>
+                        </div>
+                                  </Col>
+                                  
+                            
+                                        <Col md={ 2 } sm={ 3 } className="hidden-xs pv text-center br">
+                                           <div className="panel widget bg-purple">
+                            <Row className="row-table">
+                                <Col xs={ 4 } className="text-center bg-purple-dark pv-lg">
+                                    <em className="icon-globe fa-3x"></em>
+                                </Col>
+                                <Col xs={ 8 } className="pv-lg">
+                                    <div className="h2 mt0">700
+                                        <small>GB</small>
+                                    </div>
+                                    <div className="text-uppercase">Quota</div>
+                                </Col>
+                            </Row>
+                        </div> 
+
                                         </Col>
                                         <Col md={ 2 } sm={ 3 } className="hidden-xs pv text-center br">
-                                            <div className="text-info text-sm">10 AM</div>
-                                            <div className="text-muted text-md">
-                                                <em className="wi wi-day-cloudy"></em>
-                                            </div>
-                                            <div className="text-info">
-                                                <em className="wi wi-sprinkles"></em>
-                                                <span className="text-muted">20%</span>
-                                            </div>
-                                            <div className="text-muted">27&deg;</div>
-                                        </Col>
-                                        <Col md={ 2 } sm={ 3 } className="hidden-xs pv text-center br">
-                                            <div className="text-info text-sm">11 AM</div>
-                                            <div className="text-muted text-md">
-                                                <em className="wi wi-day-cloudy"></em>
-                                            </div>
-                                            <div className="text-info">
-                                                <em className="wi wi-sprinkles"></em>
-                                                <span className="text-muted">30%</span>
-                                            </div>
-                                            <div className="text-muted">28&deg;</div>
+                                             <div className="panel widget bg-purple">
+                            <Row className="row-table">
+                                <Col xs={ 4 } className="text-center bg-purple-dark pv-lg">
+                                    <em className="icon-globe fa-3x"></em>
+                                </Col>
+                                <Col xs={ 8 } className="pv-lg">
+                                    <div className="h2 mt0">700
+                                        <small>GB</small>
+                                    </div>
+                                    <div className="text-uppercase">Quota</div>
+                                </Col>
+                            </Row>
+                        </div> 
+                        
                                         </Col>
                                         <Col md={ 2 } className="hidden-sm hidden-xs pv text-center br">
-                                            <div className="text-info text-sm">12 PM</div>
-                                            <div className="text-muted text-md">
-                                                <em className="wi wi-day-cloudy"></em>
-                                            </div>
-                                            <div className="text-info">
-                                                <em className="wi wi-sprinkles"></em>
-                                                <span className="text-muted">20%</span>
-                                            </div>
-                                            <div className="text-muted">30&deg;</div>
+                                            <div className="panel widget">
+                            <Row className="row-table">
+                                <Col xs={ 4 } className="text-center bg-green pv-lg">
+                                    { /* See formats: https://docs.angularjs.org/api/ng/filter/date */ }
+                                    <div data-now="" data-format="MMMM" className="text-sm"></div>
+                                    <br />
+                                    <div data-now="" data-format="D" className="h2 mt0"></div>
+                                </Col>
+                                <Col xs={ 8 } className="pv-lg">
+                                    <div data-now="" data-format="dddd" className="text-uppercase"></div>
+                                    <br />
+                                    <div data-now="" data-format="h:mm" className="h2 mt0"></div>
+                                    <div data-now="" data-format="a" className="text-muted text-sm"></div>
+                                </Col>
+                            </Row>
+                        </div>
                                         </Col>
                                         <Col md={ 2 } className="hidden-sm hidden-xs pv text-center">
                                             <div className="text-info text-sm">1 PM</div>
@@ -175,8 +201,7 @@ class DashboardV1 extends React.Component {
                                             </div>
                                             <div className="text-muted">30&deg;</div>
                                         </Col>
-                                    </Row>
-                                </div>
+                              
                             </Col>
                         </Row>
                         <Row>

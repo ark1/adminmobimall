@@ -23,22 +23,7 @@ class DashboardV2 extends React.Component {
 
         return (
             <ContentWrapper>
-                <div className="content-heading">
-                    { /* START Language list */ }
-                    <div className="pull-right">
-                        <Dropdown id="dropdown-tr" pullRight>
-                            <Dropdown.Toggle>
-                                English
-                            </Dropdown.Toggle>
-                            <Dropdown.Menu className="animated fadeInUpShort">
-                                <MenuItem eventKey="1" data-set-lang="en">English</MenuItem>
-                                <MenuItem eventKey="2" data-set-lang="es">Spanish</MenuItem>
-                            </Dropdown.Menu>
-                        </Dropdown>
-                    </div>
-                    { /* END Language list */ } Dashboard
-                    <small data-localize="dashboard.WELCOME">Welcome to Angle!</small>
-                </div>
+               
                 <Row>
                     <Col lg={ 4 }>
                         { /* START List group */ }
@@ -119,84 +104,104 @@ class DashboardV2 extends React.Component {
                         { /* END List group */ }
                     </Col>
                     <Col lg={ 8 }>
-                        { /* START bar chart */ }
-                        <div id="panelChart3" className="panel">
-                            <div className="panel-heading">
-                                { /* START button group */ }
-                                <div className="pull-right btn-group">
-                                    <button type="button" data-toggle="dropdown" className="dropdown-toggle btn btn-default btn-sm">Monthly</button>
-                                    <ul role="menu" className="dropdown-menu fadeInLeft animated">
-                                        <li><a href="#">Daily</a>
-                                        </li>
-                                        <li><a href="#">Monthly</a>
-                                        </li>
-                                        <li><a href="#">Yearly</a>
-                                        </li>
-                                    </ul>
-                                </div>
-                                { /* END button group */ }
-                                <div className="panel-title">Projects Hours</div>
-                            </div>
-                            <div className="panel-wrapper">
-                                <div className="panel-body">
-                                    <div className="indicator show">
-                                        <span className="spinner"></span>
-                                    </div>
-                                    <div ref="chartBar" className="chart-bar-stackedv2 flot-chart"></div>
-                                </div>
-                            </div>
+                       <div className="panel panel-transparent">
+                            <div data-vector-map="" data-height="450" data-scale='0' data-map-name="world_mill_en"></div>
                         </div>
-                        { /* END bar chart */ }
                     </Col>
                 </Row>
                 <div className="unwrap mv-lg">
                     { /* START chart */ }
-                    <div id="panelChart9" className="panel">
-                        <div className="panel-heading">
-                            { /* START button group */ }
-                            <div className="pull-right btn-group">
-                                <button type="button" data-toggle="dropdown" className="dropdown-toggle btn btn-default btn-sm">All time</button>
-                                <ul role="menu" className="dropdown-menu fadeInLeft animated">
-                                    <li><a href="#">Daily</a>
-                                    </li>
-                                    <li><a href="#">Monthly</a>
-                                    </li>
-                                    <li className="divider"></li>
-                                    <li><a href="#">All time</a>
-                                    </li>
-                                </ul>
-                            </div>
-                            { /* END button group */ }
-                            <div className="panel-title">Overall progress</div>
-                        </div>
-                        <div className="panel-wrapper">
-                            <div className="panel-body">
-                                <div ref="chartSpline" className="chart-splinev2 flot-chart"></div>
-                            </div>
-                            <div className="panel-body">
-                                <Row>
-                                    <Col sm={ 3 } xs={ 6 } className="text-center">
-                                        <p>Projects</p>
-                                        <div className="h1">25</div>
-                                    </Col>
-                                    <Col sm={ 3 } xs={ 6 } className="text-center">
-                                        <p>Teammates</p>
-                                        <div className="h1">85</div>
-                                    </Col>
-                                    <Col sm={ 3 } xs={ 6 } className="text-center">
-                                        <p>Hours</p>
-                                        <div className="h1">380</div>
-                                    </Col>
-                                    <Col sm={ 3 } xs={ 6 } className="text-center">
-                                        <p>Budget</p>
-                                        <div className="h1">$ 10,000.00</div>
-                                    </Col>
-                                </Row>
-                            </div>
-                        </div>
-                    </div>
-                    { /* END chart */ }
+                 
+                    { /* END chart */ } 
                 </div>
+                <Row className="mb-lg">
+                { /* START loader widget*/ }
+                 <Col sm={ 3 } xs={ 6 } className="text-center">
+                        
+                        <div className="panel panel-default">
+                            <div className="panel-body">
+                               <a href="#" className="text-muted pull-right">
+                                    <em className="fa fa-arrow-right"></em>
+                                </a>
+                                <div className="text-info">Average Monthly Uploads</div>
+                                <canvas data-classyloader="" data-percentage="70" data-speed="20" data-font-size="40px" data-diameter="70" data-line-color="#23b7e5" data-remaining-line-color="rgba(200,200,200,0.4)"
+                                data-line-width="10" data-rounded-line="true" className="center-block"></canvas>
+                                <div data-sparkline="" data-bar-color="#23b7e5" data-height="30" data-bar-width="5" data-bar-spacing="2" data-values="5,4,8,7,8,5,4,6,5,5,9,4,6,3,4,7,5,4,7" className="text-center"></div>
+                            </div>
+                            <div className="panel-footer">
+                                <p className="text-muted">
+                                    <em className="fa fa-upload fa-fw"></em>
+                                    <span>This Month</span>
+                                    <span className="text-dark">1000 Gb</span>
+                                </p>
+                            </div>
+                        </div>                       
+                    </Col>
+                     <Col sm={ 3 } xs={ 6 } className="text-center">
+                        
+                        <div className="panel panel-default">
+                            <div className="panel-body">
+                                <a href="#" className="text-muted pull-right">
+                                    <em className="fa fa-arrow-right"></em>
+                                </a>
+                                <div className="text-info">Average Monthly Uploads</div>
+                                <canvas data-classyloader="" data-percentage="70" data-speed="20" data-font-size="40px" data-diameter="70" data-line-color="#23b7e5" data-remaining-line-color="rgba(200,200,200,0.4)"
+                                data-line-width="10" data-rounded-line="true" className="center-block"></canvas>
+                                <div data-sparkline="" data-bar-color="#23b7e5" data-height="30" data-bar-width="5" data-bar-spacing="2" data-values="5,4,8,7,8,5,4,6,5,5,9,4,6,3,4,7,5,4,7" className="text-center"></div>
+                            </div>
+                            <div className="panel-footer">
+                                <p className="text-muted">
+                                    <em className="fa fa-upload fa-fw"></em>
+                                    <span>This Month</span>
+                                    <span className="text-dark">1000 Gb</span>
+                                </p>
+                            </div>
+                        </div>                       
+                    </Col>
+                     <Col sm={ 3 } xs={ 6 } className="text-center">
+                        
+                        <div className="panel panel-default">
+                            <div className="panel-body">
+                                <a href="#" className="text-muted pull-right">
+                                    <em className="fa fa-arrow-right"></em>
+                                </a>
+                                <div className="text-info">Average Monthly Uploads</div>
+                                <canvas data-classyloader="" data-percentage="70" data-speed="20" data-font-size="40px" data-diameter="70" data-line-color="#23b7e5" data-remaining-line-color="rgba(200,200,200,0.4)"
+                                data-line-width="10" data-rounded-line="true" className="center-block"></canvas>
+                                <div data-sparkline="" data-bar-color="#23b7e5" data-height="30" data-bar-width="5" data-bar-spacing="2" data-values="5,4,8,7,8,5,4,6,5,5,9,4,6,3,4,7,5,4,7" className="text-center"></div>
+                            </div>
+                            <div className="panel-footer">
+                                <p className="text-muted">
+                                    <em className="fa fa-upload fa-fw"></em>
+                                    <span>This Month</span>
+                                    <span className="text-dark">1000 Gb</span>
+                                </p>
+                            </div>
+                        </div>                       
+                    </Col>
+                     <Col sm={ 3 } xs={ 6 } className="text-center">
+                        
+                        <div className="panel panel-default">
+                            <div className="panel-body">
+                                <a href="#" className="text-muted pull-right">
+                                    <em className="fa fa-arrow-right"></em>
+                                </a>
+                                <div className="text-info">Average Monthly Uploads</div>
+                                <canvas data-classyloader="" data-percentage="70" data-speed="20" data-font-size="40px" data-diameter="70" data-line-color="#23b7e5" data-remaining-line-color="rgba(200,200,200,0.4)"
+                                data-line-width="10" data-rounded-line="true" className="center-block"></canvas>
+                                <div data-sparkline="" data-bar-color="#23b7e5" data-height="30" data-bar-width="5" data-bar-spacing="2" data-values="5,4,8,7,8,5,4,6,5,5,9,4,6,3,4,7,5,4,7" className="text-center"></div>
+                            </div>
+                            <div className="panel-footer">
+                                <p className="text-muted">
+                                    <em className="fa fa-upload fa-fw"></em>
+                                    <span>This Month</span>
+                                    <span className="text-dark">1000 Gb</span>
+                                </p>
+                            </div>
+                        </div>                       
+                    </Col>
+                    { /* END loader widget*/ }
+                    </Row>
                 { /* START radial charts */ }
                 <Row className="mb-lg">
                     <Col sm={ 3 } xs={ 6 } className="text-center">

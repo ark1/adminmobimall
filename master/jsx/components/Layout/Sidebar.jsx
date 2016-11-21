@@ -124,6 +124,10 @@ class Sidebar extends React.Component {
                                     </ul>
                                 </Collapse>
                             </li>
+                            <li className="nav-heading ">
+                                <span data-localize="sidebar.heading.COMPONENTS">Manage</span>
+                            </li>
+                            {/*widgets*/}
                             <li className={ this.routeActive('widgets') ? 'active' : '' }>
                                 <Link to="widgets" title="Widgets">
                                 <div className="pull-right label label-success">30</div>
@@ -131,6 +135,7 @@ class Sidebar extends React.Component {
                                 <span data-localize="sidebar.nav.WIDGETS">Widgets</span>
                                 </Link>
                             </li>
+                            {/*Layouts
                             <li>
                                 <div className="nav-item" title="Elements" onClick={ this.toggleItemCollapse.bind(this, 'layouts') }>
                                     <em className="icon-layers"></em>
@@ -146,9 +151,17 @@ class Sidebar extends React.Component {
                                         </li>
                                     </ul>
                                 </Collapse>
-                            </li>
+                            </li>*/}
                             <li className="nav-heading ">
-                                <span data-localize="sidebar.heading.COMPONENTS">Components</span>
+                                <span data-localize="sidebar.heading.COMPONENTS">My Stores</span>
+                            </li>
+                            {/*heading*/}
+                            <li className="nav-heading ">
+                                <span data-localize="sidebar.heading.COMPONENTS">Marketing</span>
+                            </li>
+                            {/*heading*/}
+                            <li className="nav-heading ">
+                                <span data-localize="sidebar.heading.COMPONENTS">Admin</span>
                             </li>
                             <li className={ this.routeActive(['buttons', 'notifications', 'sweetalert', 'tour', 'carousel', 'spinners', 'animations', 'dropdown', 'nestable', 'sortable', 'panels', 'portlet', 'grid', 'grid-masonry', 'typography', 'icons-font', 'icons-weather', 'colors']) ? 'active' : '' }>
                                 <div className="nav-item" title="Elements" onClick={ this.toggleItemCollapse.bind(this, 'elements') }>
@@ -158,11 +171,12 @@ class Sidebar extends React.Component {
                                 <Collapse in={ this.state.collapse.elements }>
                                     <ul id="#" className="nav sidebar-subnav">
                                         <li className="sidebar-subnav-header">Elements</li>
+                                         {/*heading
                                         <li className={ this.routeActive('buttons') ? 'active' : '' }>
                                             <Link to="buttons" title="Buttons">
                                             <span data-localize="sidebar.nav.element.BUTTON">Buttons</span>
                                             </Link>
-                                        </li>
+                                        </li>*/}
                                         <li className={ this.routeActive('notifications') ? 'active' : '' }>
                                             <Link to="notifications" title="Notifications">
                                             <span data-localize="sidebar.nav.element.NOTIFICATION">Notifications</span>

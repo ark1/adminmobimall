@@ -47,6 +47,21 @@ class DashboardV3 extends React.Component {
                         </div>
                     </Col>
                     <Col lg={ 3 } sm={ 6 }>
+                    <li className="list-group-item">
+                                <Row className="row-table pv-lg">
+                                    <Col xs={ 6 }>
+                                        <p className="m0 lead">1204</p>
+                                        <p className="m0">
+                                            <small>Commits this month</small>
+                                        </p>
+                                    </Col>
+                                    <Col xs={ 6 } className="text-center">
+                                        <div data-sparkline="" data-bar-color="#23b7e5" data-height="60" data-bar-width="10" data-bar-spacing="6" data-chart-range-min="0" data-values="3,6,7,8,4,5"></div>
+                                    </Col>
+                                </Row>
+                            </li>
+                    </Col>
+                    <Col lg={ 3 } sm={ 6 }>
                         { /* START widget*/ }
                         <div className="panel widget bg-purple-light pt b0 widget">
                             <div className="ph">

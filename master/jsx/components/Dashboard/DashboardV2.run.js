@@ -1,6 +1,6 @@
 import initSparkLine from '../Common/sparkline'
 import initSlimScroll from '../Common/slimscroll'
-
+import initVectorMap from '../Common/maps-vector'
 export default (chartBar, chartSpline) => {
 
     // Chart Sline
@@ -189,5 +189,6 @@ export default (chartBar, chartSpline) => {
     $('[data-classyloader]').each(function() {
         $(this).ClassyLoader($(this).data());
     });
-
+ // Vector Map
+    $('[data-vector-map]').each(initVectorMap);
 }
