@@ -60,7 +60,14 @@ body,
 .wrapper > .aside {
   background-color: $aside-bg;
 }
+iframe {border-width: 0px;}
+iframe:focus { 
+    outline: none;
+}
 
+iframe[seamless] { 
+    display: block;
+}
 /* ========================================================================
    Component: top-navbar
  ========================================================================== */

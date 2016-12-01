@@ -40,7 +40,7 @@ class DashboardV2 extends React.Component {
                             </div>
                             <div className="panel-footer">
                                 <p className="text-muted">
-                                    <span className="text-dark"><large>$2934</large></span>
+                                    <span className="text-dark"><h4>$2934</h4></span>
                                 </p>
                             </div>
                         </div>                       
@@ -60,7 +60,7 @@ class DashboardV2 extends React.Component {
                             <div className="panel-footer">
                                 <p className="text-muted">
                                 
-                                   <span className="text-dark"><large>$3934</large></span>
+                                   <span className="text-dark"><h4>$3934</h4></span>
                                 </p>
                             </div>
                         </div>                       
@@ -80,7 +80,7 @@ class DashboardV2 extends React.Component {
                             <div className="panel-footer">
                                 <p className="text-muted">
                                    
-                                    <span className="text-dark"><large>$20875</large></span>
+                                    <span className="text-dark"><h4>$20875</h4></span>
                                 </p>
                             </div>
                         </div>                       
@@ -100,7 +100,7 @@ class DashboardV2 extends React.Component {
                             <div className="panel-footer">
                                 <p className="text-muted">
                                     
-                                    <span className="text-dark"><large>$102934</large></span>
+                                    <span className="text-dark"><h4>$102934</h4></span>
                                 </p>
                             </div>
                         </div>                       
@@ -127,7 +127,7 @@ class DashboardV2 extends React.Component {
                             <li className="list-group-item">
                                 <Row className="row-table pv-lg">
                                     <Col xs={ 6 }>
-                                        <p className="m0 lead">$ 3,200.00</p>
+                                        <p className="m0 lead">$ 30,200.00</p>
                                         <p className="m0">
                                              <large>3 Month Average</large>
                                         </p>

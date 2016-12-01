@@ -11,6 +11,15 @@ body,
 .wrapper > .aside {
   background-color: #fff; }
 
+iframe {
+  border-width: 0px; }
+
+iframe:focus {
+  outline: none; }
+
+iframe[seamless] {
+  display: block; }
+
 /* ========================================================================
    Component: top-navbar
  ========================================================================== */

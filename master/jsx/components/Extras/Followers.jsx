@@ -8,7 +8,7 @@ class Followers extends React.Component {
     render() {
         return (
             <ContentWrapper>
-                <h3>Followers</h3>
+                <h3>Customers</h3>
                     <Row>
                        { /* Aside panel */ }
                        <Col lg={3} md={4}>
@@ -18,9 +18,9 @@ class Followers extends React.Component {
                              </div>
                              <div className="panel-body">
                                 <img src="img/user/02.jpg" className="img-circle thumb64" />
-                                <p className="h4 text-bold mb0">Todd Evans</p>
-                                <p>Rome, Italy</p>
-                                <p>Joined on Feb, 2015</p>
+                                <p className="h4 text-bold mb0">Det Prest</p>
+                                <p>Lagos NY</p>
+                                <p>Joined on Dec, 2016</p>
                              </div>
                              <div className="panel-body bt">
                                 <Row>

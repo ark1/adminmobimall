@@ -10,7 +10,7 @@ class Calendar extends React.Component {
     render() {
         return (
             <ContentWrapper>
-                <h3>Full Calendar
+                <h3>Marketing Calendar
                    <small>Drag and Drop events and tasks</small>
                 </h3>
                 { /* START row */ }
@@ -18,39 +18,11 @@ class Calendar extends React.Component {
                     <Row>
                         <Col lg={3} md={4}>
                             <Row>
-                                <Col md={ 12 } sm={ 6 } xs={ 12 }>
+                             <Col md={ 12 } sm={ 6 } xs={ 12 }>
                                     { /* START panel */ }
                                     <div className="panel panel-default">
                                         <div className="panel-heading">
-                                            <h4 className="panel-title">Draggable Events</h4>
-                                        </div>
-                                        { /* Default external events list */ }
-                                        <div className="external-events-trash">
-                                            <div className="panel-body">
-                                                <div className="external-events">
-                                                    <div className="bg-green">Lunch</div>
-                                                    <div className="bg-danger">Go home</div>
-                                                    <div className="bg-info">Do homework</div>
-                                                    <div className="bg-warning">Work on UI design</div>
-                                                    <div className="bg-inverse">Sleep tight</div>
-                                                </div>
-                                                <p>
-                                                <span className="checkbox c-checkbox">
-                                                    <label>
-                                                        <input id="remove-after-drop" type="checkbox" />
-                                                        <em className="fa fa-check"></em>Remove after Drop</label>
-                                                </span>
-                                                </p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    { /* END panel */ }
-                                </Col>
-                                <Col md={ 12 } sm={ 6 } xs={ 12 }>
-                                    { /* START panel */ }
-                                    <div className="panel panel-default">
-                                        <div className="panel-heading">
-                                            <h3 className="panel-title">Create Event</h3>
+                                            <h3 className="panel-title">Create Campaign</h3>
                                         </div>
                                         <div className="panel-body">
                                             <div className="input-group mb">
@@ -95,6 +67,35 @@ class Calendar extends React.Component {
                                     </div>
                                     { /* END panel */ }
                                 </Col>
+                                <Col md={ 12 } sm={ 6 } xs={ 12 }>
+                                    { /* START panel */ }
+                                    <div className="panel panel-default">
+                                        <div className="panel-heading">
+                                            <h4 className="panel-title">Draggable Events</h4>
+                                        </div>
+                                        { /* Default external events list */ }
+                                        <div className="external-events-trash">
+                                            <div className="panel-body">
+                                                <div className="external-events">
+                                                    <div className="bg-green">Promote</div>
+                                                    <div className="bg-danger">Discounts</div>
+                                                    <div className="bg-info">BOGOF</div>
+                                                    <div className="bg-warning">Group Discount</div>
+                                                    <div className="bg-inverse">Video Campaign</div>
+                                                </div>
+                                                <p>
+                                                <span className="checkbox c-checkbox">
+                                                    <label>
+                                                        <input id="remove-after-drop" type="checkbox" />
+                                                        <em className="fa fa-check"></em>Remove after Drop</label>
+                                                </span>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    { /* END panel */ }
+                                </Col>
+                               
                             </Row>
                         </Col>
                         <Col lg={ 9 } md={ 8 }>

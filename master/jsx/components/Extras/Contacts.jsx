@@ -25,7 +25,7 @@ class Contacts extends React.Component {
                       </MenuItem>
                     </DropdownButton>
                 </div>
-                <h3>Contacts</h3>
+                <h3>Customers</h3>
                 <Row>
                    <Col md={4}>
                       <div className="panel panel-default">

@@ -10,7 +10,7 @@ class EcommerceProducts extends React.Component {
     render() {
         return (
             <ContentWrapper>
-                <div className="content-heading">Products</div>
+                <div className="content-heading">Inventory</div>
                 <Table id="datatable1" responsive striped hover className="b0">
                     <thead>
                         <tr>

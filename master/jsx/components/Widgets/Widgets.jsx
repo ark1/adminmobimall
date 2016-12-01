@@ -14,6 +14,7 @@ class Widgets extends React.Component {
             <ContentWrapper>
                 <h3>Widgets</h3>
                 {/* START row */}
+                <iframe width="320" height="440" src="http://instagram.com/p/qbq6fIJMVZ/embed" frameborder="0"></iframe>
                 <div className="row">
                    <div className="col-lg-4">
                       {/* START widget */}

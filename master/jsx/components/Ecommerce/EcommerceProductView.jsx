@@ -20,7 +20,11 @@ class EcommerceProductView extends React.Component {
     render() {
         return (
             <ContentWrapper>
-                <div className="content-heading">Product #000123</div>
+            
+
+
+                <div className="content-heading">New Product</div>
+                <iframe src="http://static.photoeditorsdk.com/demo/" width="1080" height="600"></iframe>
                 <form className="panel">
                     <Tabs activeKey={ this.state.key } onSelect={ this.handleSelect.bind(this) } justified id="tabID">
                         <Tab eventKey={ 1 } title="Product Edit">
@@ -77,7 +81,7 @@ class EcommerceProductView extends React.Component {
                                 </div>
                             </fieldset>
                         </Tab>
-                        <Tab eventKey={ 2 } title="SEO Metadata">
+                        <Tab eventKey={ 2 } title="Marketing">
                             <fieldset>
                                 <div className="form-group">
                                     <label className="col-md-2 control-label">Title</label>
@@ -103,7 +107,7 @@ class EcommerceProductView extends React.Component {
                                 </div>
                             </fieldset>
                         </Tab>
-                        <Tab eventKey={ 3 } title="Pictures">
+                        <Tab eventKey={ 3 } title="Media">
                             <div className="row mb-lg">
                                 <div className="col-xs-3">
                                     <strong>Preview</strong>

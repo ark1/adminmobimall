@@ -90,7 +90,7 @@
 /* ========================================================================
      Component: bootstrap-reset
  ========================================================================== */
-@import url(//fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,400italic);
+@import url(//fonts.googleapis.com/css?family=Roboto:300);
 *:focus {
   outline: 0 !important; }
 
@@ -293,7 +293,7 @@ fieldset {
      Component: typo
  ========================================================================== */
 body {
-  font-family: "Source Sans Pro", sans-serif;
+  font-family: 'Roboto', sans-serif;
   color: #656565; }
 
 h1, h2, h3, h4 {

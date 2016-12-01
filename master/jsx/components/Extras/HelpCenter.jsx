@@ -12,7 +12,7 @@ class HelpCenter extends React.Component {
                    <div className="bg-cover">
                       <div className="container container-md pv-lg">
                          <div className="text-center mb-lg pb-lg">
-                            <div className="h1 text-bold">Help Center</div>
+                            <div className="h1 text-bold">Mobimall Support</div>
                             <p>User our Help Center to quickly find answers</p>
                          </div>
                       </div>
@@ -39,10 +39,51 @@ class HelpCenter extends React.Component {
                          </span>
                       </div>
                    </form>
-                   <p className="mv-lg pv-lg text-muted text-center">
+                
+                
+                   <p className="mv-lg pv-lg text-muted text-center"> 
                       <small>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;</small>
                    </p>
                    <Row>
+                   <Col md={4}>
+                         <div className="panel b">
+                            <div className="panel-body text-center">
+                               <a href="#" className="link-unstyled text-warning">
+                                  <em className="fa fa-5x fa-diamond mb-lg"></em>
+                                  <br/>
+                                  <span className="h4">Buyers</span>
+                                  <br/>
+                                  <small className="text-muted">View all &rarr;</small>
+                               </a>
+                            </div>
+                         </div>
+                      </Col>
+                      <Col md={4}>
+                         <div className="panel b">
+                            <div className="panel-body text-center">
+                               <a href="#" className="link-unstyled text-danger">
+                                  <em className="fa fa-5x fa-building-o mb-lg"></em>
+                                  <br/>
+                                  <span className="h4">Sellers</span>
+                                  <br/>
+                                  <small className="text-muted">View all &rarr;</small>
+                               </a>
+                            </div>
+                         </div>
+                      </Col>
+                      <Col md={4}>
+                         <div className="panel b">
+                            <div className="panel-body text-center">
+                               <a href="#" className="link-unstyled text-success">
+                                  <em className="fa fa-5x fa-calendar-check-o mb-lg"></em>
+                                  <br/>
+                                  <span className="h4">Billing</span>
+                                  <br/>
+                                  <small className="text-muted">View all &rarr;</small>
+                               </a>
+                            </div>
+                         </div>
+                      </Col>
                       <Col md={4}>
                          <div className="panel b">
                             <div className="panel-body text-center">
@@ -82,45 +123,7 @@ class HelpCenter extends React.Component {
                             </div>
                          </div>
                       </Col>
-                      <Col md={4}>
-                         <div className="panel b">
-                            <div className="panel-body text-center">
-                               <a href="#" className="link-unstyled text-warning">
-                                  <em className="fa fa-5x fa-diamond mb-lg"></em>
-                                  <br/>
-                                  <span className="h4">Buyers</span>
-                                  <br/>
-                                  <small className="text-muted">View all &rarr;</small>
-                               </a>
-                            </div>
-                         </div>
-                      </Col>
-                      <Col md={4}>
-                         <div className="panel b">
-                            <div className="panel-body text-center">
-                               <a href="#" className="link-unstyled text-danger">
-                                  <em className="fa fa-5x fa-building-o mb-lg"></em>
-                                  <br/>
-                                  <span className="h4">Sellers</span>
-                                  <br/>
-                                  <small className="text-muted">View all &rarr;</small>
-                               </a>
-                            </div>
-                         </div>
-                      </Col>
-                      <Col md={4}>
-                         <div className="panel b">
-                            <div className="panel-body text-center">
-                               <a href="#" className="link-unstyled text-success">
-                                  <em className="fa fa-5x fa-calendar-check-o mb-lg"></em>
-                                  <br/>
-                                  <span className="h4">Billing</span>
-                                  <br/>
-                                  <small className="text-muted">View all &rarr;</small>
-                               </a>
-                            </div>
-                         </div>
-                      </Col>
+                      
                    </Row>
                    <Row>
                       <Col md={2}></Col>

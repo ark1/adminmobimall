@@ -28,7 +28,7 @@ class Mailbox extends React.Component {
                                             <li className="p">
                                                 <small className="text-muted">MAILBOXES</small>
                                             </li>
-                                            <li className="active">
+                                            <li className="">
                                                 <a href="#">
                                                     <span className="label label-green pull-right">42</span>
                                                     <em className="fa fa-fw fa-lg fa-inbox"></em>

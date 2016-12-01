@@ -111,14 +111,35 @@ class Sidebar extends React.Component {
                             <li className="nav-heading ">
                                 <span data-localize="sidebar.heading.COMPONENTS">Manage</span>
                             </li>
-                            {/*widgets*/}
+                            {/*widgets
                             <li className={ this.routeActive('widgets') ? 'active' : '' }>
                                 <Link to="widgets" title="Widgets">
                                 <div className="pull-right label label-success">30</div>
                                 <em className="icon-grid"></em>
                                 <span data-localize="sidebar.nav.WIDGETS">Widgets</span>
                                 </Link>
+                            </li>*/}
+                            <li className={ this.routeActive('ecommerce-products') ? 'active' : '' }>
+                                <Link to="ecommerce-products" title="Widgets">
+                                <em className="fa fa-barcode"></em>
+                                <span data-localize="sidebar.nav.ecommerce-products">Inventory</span>
+                                </Link>
                             </li>
+                            <li className={ this.routeActive('contacts') ? 'active' : '' }>
+                                <Link to="followers" title="Customers">
+                                <div className="pull-right label label-success">3</div>
+                                <em className="icon-people"></em>
+                                <span data-localize="sidebar.nav.followers">Customers</span>
+                                </Link>
+                            </li>
+                            <li className={ this.routeActive('widgets') ? 'active' : '' }>
+                                <Link to="map-google" title="Shipping">
+                                <div className="pull-right label label-danger">6</div>
+                                <em className="fa fa-truck"></em>
+                                <span data-localize="sidebar.nav.map.GOOGLE">Shipping</span>
+                                </Link>
+                            </li>
+                            
                             {/*Layouts
                             <li>
                                 <div className="nav-item" title="Elements" onClick={ this.toggleItemCollapse.bind(this, 'layouts') }>
@@ -139,14 +160,80 @@ class Sidebar extends React.Component {
                             <li className="nav-heading ">
                                 <span data-localize="sidebar.heading.COMPONENTS">My Stores</span>
                             </li>
+                            <li className={ this.routeActive('widgets') ? 'active' : '' }>
+                                <Link to="projects" title="Stores">
+                               <em className="icon-social-instagram"></em>
+                                <span data-localize="sidebar.nav.WIDGETS">Stores</span>
+                                </Link>
+                            </li>
+                            <li className={ this.routeActive('widgets') ? 'active' : '' }>
+                                <Link to="widgets" title="Widgets">
+                               <em className="fa fa-building"></em>
+                                <span data-localize="sidebar.nav.WIDGETS">Store Builder</span>
+                                </Link>
+                            </li>
+                            <li className={ this.routeActive('widgets') ? 'active' : '' }>
+                                <Link to="ecommerce-product-view" title="New Product">
+                              <em className="fa fa-cubes"></em>
+                                <span data-localize="sidebar.nav.ecommerce-product-view">Product Builder</span>
+                                </Link>
+                            </li>
                             {/*heading*/}
                             <li className="nav-heading ">
                                 <span data-localize="sidebar.heading.COMPONENTS">Marketing</span>
                             </li>
+                            <li className={ this.routeActive('calendar') ? 'active' : '' }>
+                                <Link to="calendar" title="Marketing Campaign">
+                                <div className="pull-right label label-warning">0</div>
+                                <em className="fa fa-calendar"></em>
+                                <span data-localize="sidebar.nav.calendar">Campaigns</span>
+                                </Link>
+                            </li>
+                            <li className={ this.routeActive('widgets') ? 'active' : '' }>
+                                <Link to="Timeline" title="timeline">
+                                <em className="fa fa-magic"></em>
+                                <span data-localize="sidebar.nav.WIDGETS">Ad Wizard</span>
+                                </Link>
+                            </li>
                             {/*heading*/}
+                            
                             <li className="nav-heading ">
                                 <span data-localize="sidebar.heading.COMPONENTS">Admin</span>
                             </li>
+                            <li className={ this.routeActive('settings') ? 'active' : '' }>
+                                <Link to="settings" title="Settings">
+                                <em className="icon-settings"></em>
+                                <span data-localize="sidebar.nav.Settings">Settings</span>
+                                </Link>
+                            </li>
+                            <li className={ this.routeActive('Invoice') ? 'active' : '' }>
+                                <Link to="invoice" title="Billing">
+                                <div className="pull-right label label-danger">1</div>
+                                <em className="icon-credit-card"></em>
+                                <span data-localize="sidebar.nav.WIDGETS">Billing</span>
+                                </Link>
+                            </li>
+                            <li className={ this.routeActive('mailbox') ? 'active' : '' }>
+                                <Link to="mailbox" title="Mailbox">
+                                <div className="pull-right label label-info">13</div>
+                                <em className="icon-envelope"></em>
+                                <span data-localize="sidebar.nav.MAILBOX">Inbox</span>
+                                </Link>
+                            </li>
+                             <li className={ this.routeActive('widgets') ? 'active' : '' }>
+                                <Link to="widgets" title="Widgets">
+                               <em className="fa fa-line-chart"></em>
+                                <span data-localize="sidebar.nav.WIDGETS">Reports</span>
+                                </Link>
+                            </li>
+                             <li className={ this.routeActive('help-center') ? 'active' : '' }>
+                                <Link to="help-center" title="Support">
+                                <em className="icon-support"></em>
+                                <span data-localize="sidebar.nav.help-center">Support</span>
+                                </Link>
+                            </li>
+                            
+ {/*
                             <li className={ this.routeActive(['buttons', 'notifications', 'sweetalert', 'tour', 'carousel', 'spinners', 'animations', 'dropdown', 'nestable', 'sortable', 'panels', 'portlet', 'grid', 'grid-masonry', 'typography', 'icons-font', 'icons-weather', 'colors']) ? 'active' : '' }>
                                 <div className="nav-item" title="Elements" onClick={ this.toggleItemCollapse.bind(this, 'elements') }>
                                     <em className="icon-chemistry"></em>
@@ -155,12 +242,12 @@ class Sidebar extends React.Component {
                                 <Collapse in={ this.state.collapse.elements }>
                                     <ul id="#" className="nav sidebar-subnav">
                                         <li className="sidebar-subnav-header">Elements</li>
-                                         {/*heading
+                                        heading
                                         <li className={ this.routeActive('buttons') ? 'active' : '' }>
                                             <Link to="buttons" title="Buttons">
                                             <span data-localize="sidebar.nav.element.BUTTON">Buttons</span>
                                             </Link>
-                                        </li>*/}
+                                        </li>
                                         <li className={ this.routeActive('notifications') ? 'active' : '' }>
                                             <Link to="notifications" title="Notifications">
                                             <span data-localize="sidebar.nav.element.NOTIFICATION">Notifications</span>
@@ -643,7 +730,7 @@ class Sidebar extends React.Component {
                                         </li>
                                     </ul>
                                 </Collapse>
-                            </li>
+                            </li>*/}
                         </ul>
                         { /* END sidebar nav */ }
                     </nav>
